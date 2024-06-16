@@ -81,7 +81,7 @@ const registerGoat = async (req, res) => {
 
 const getGoat = async (req, res) => {
     try {
-        const goat = await Goat.find({});
+        const goat = await Goat.find({}).populate('visits');
         res.status(200).json({
             success: true,
             goat
