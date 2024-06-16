@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import Team from "../Models/Team.model.js";
 
 const ConnectDB = async () => {
   try {
